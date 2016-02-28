@@ -1,3 +1,9 @@
+/**
+The point of this project is to show that when using jQuery $.ajax() syntax to send a request, in order for the data to be parsed in Sails as a parameter is to use the `contentType` property. That's because the data is going through the body.
+
+If you use `$.post()` the data will be passed through the query string and automatically be parsed as parameters.
+**/
+
 $( document ).ready(function() {
 
   $('.da-body').click(function() {
